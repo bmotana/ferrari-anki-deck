@@ -1,0 +1,28 @@
+rough draft
+goal/project scope
+
+- I want to make an Anki deck from a dataset that I scraped myself of all, if not most, of the Ferrari models ever made. Equally important, I want to publish that dataset on Kaggle.
+- I want to scrape from a website or websites, such as a website as simple as Wikipedia if it suffices, or they could be a set of sites.
+    - I want to make code to scrape it and leave it as CSV since Anki can do that format, and the Anki file type won’t allow me to be flexible. I would prefer to use python to scrape the data due to the fact that It’s the language that I have the most experience as well as it being less of a hassle than other languages
+- The Anki decks need a simple image in front and model text/number on the back; consequently, no additional information is needed.
+- I won't need all of the models; 80 per cent of them is fine
+
+polished draft
+
+- **Source**: Wikipedia as primary (the List of Ferrari vehicles page is your anchor—it links out to every individual model page). "Maybe other" stays open as a *phase 2* enrichment step once Wikipedia's gaps become visible—it's better to scrape one source cleanly first than try to merge two sources blind.
+- **Data scope**: road/production models only — this excludes F1 cars, prototypes that-never-shipped, and one-offs, which simplifies things a lot since Wikipedia's list page already separates these reasonably well.
+- **Output**: two CSVs from one scrape run —
+    - `ferrari_anki.csv` → just `front` (image) and `back` (model name + year, since "name" alone is ambiguous across decades — e.g., there are multiple "Ferrari 250" variants)
+    - `ferrari_kaggle.csv` → name, year(s) of production, engine, body style, number produced, image URL/licence, source URL — whatever Wikipedia's infoboxes reliably give you
+
+future steps
+
+- Trying the "What can I try before this that might work better or faster?”
+- counting models
+- try 25 first
+- testing old way of scraping and than these other api
+- https://github.com/attardi/wikiextractor?utm_source=chatgpt.com
+- https://github.com/wikimedia/pywikibot
+- field specifically for anki and kaggle → you should cut for kaggle and for anki
+- adding this a field for this for the anki decks
+    - <img src="https://...">
