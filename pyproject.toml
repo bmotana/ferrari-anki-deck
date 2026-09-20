@@ -1,0 +1,45 @@
+[project]
+name = "my-project"
+version = "0.1.0"
+description = "A simple Python project setup with Ruff"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.ruff]
+# Target Python version
+target-version = "py310"
+
+# Set max line length to match common standards (default is 88)
+line-length = 88
+
+# Exclude common generated or external directories
+exclude = [
+    ".git",
+    ".venv",
+    "__pycache__",
+    "build",
+    "dist",
+]
+
+[tool.ruff.lint]
+# Enable recommended rules:
+# E/W: Pycodestyle (errors/warnings)
+# F: Pyflakes
+# I: Isort (import sorting)
+# B: flake8-bugbear
+# UP: pyupgrade
+select = ["E", "W", "F", "I", "B", "UP"]
+
+# Rules to ignore (if needed)
+ignore = []
+
+# Allow fix for all enabled rules (when using `ruff check --fix`)
+fixable = ["ALL"]
+
+[tool.ruff.format]
+# Prefer double quotes over single quotes
+quote-style = "double"
+
+# Use spaces instead of tabs for indentation
+indent-style = "space"
