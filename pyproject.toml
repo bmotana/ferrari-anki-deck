@@ -1,10 +1,19 @@
 [project]
-name = "my-project"
+name = "ferrari-anki-decks"
 version = "0.1.0"
-description = "A simple Python project setup with Ruff"
+description = "Scrape Ferrari road-car data into Anki-ready and Kaggle-ready CSV files."
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = []
+license = { file = "LICENSE" }
+authors = [{ name = "Bafana Motana" }]
+dependencies = [
+    "beautifulsoup4>=4.12.0",
+    "requests>=2.31.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/bmotana/ferrari-anki-deck"
+Repository = "https://github.com/bmotana/ferrari-anki-deck"
 
 [tool.ruff]
 # Target Python version
