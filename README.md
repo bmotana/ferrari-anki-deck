@@ -51,13 +51,9 @@ Import `ferrari_anki.csv` as a comma-separated file with two fields. Map `front`
 
 The scraper uses Wikipedia's [List of Ferrari road cars](https://en.wikipedia.org/wiki/List_of_Ferrari_road_cars) as its index and reads individual model pages plus the MediaWiki API for image metadata. Keep a sensible request delay, check the generated image licences before redistribution, and verify fields before publishing a derived dataset.
 
-## Development
+## Published resources
 
-Ruff handles linting and formatting:
+* [Anki deck](https://ankiweb.net/shared/info/1763111327?cb=1789894642924)
+* [Ferrari road-car dataset on Kaggle](https://www.kaggle.com/datasets/bafanamotana/ferrari-roadcar-models)
 
-```powershell
-python -m ruff check .
-python -m ruff format --check .
-```
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidance. This project is released under the [MIT License](LICENSE).
+This project is released under the [MIT License](LICENSE).
